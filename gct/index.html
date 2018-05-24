@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sample Part of GCT Page</title>
+</head>
+
+<style type="text/css">
+	body{
+		background-color: rgb(0,32,96);
+	}
+	img{
+		padding: 10px 40px 20px 40px;
+	}
+	#navbar{
+		background-color: yellow;
+		margin-top: 10px;
+		margin-bottom: 0px;
+		width: 100%;
+		height: 50px;
+		border-bottom: 1px solid black;
+		border-radius:8px 8px 0 0;
+		
+	}
+	div p{
+		padding-left: 48px;
+		padding-top: 15px;
+		font-size: 15px;
+		font-weight: 600;
+		font-family: sans-serif;
+	}
+	#whitetxt{
+		padding-top: 15px !important;
+		padding-left: 48px !important;
+	}
+	div p a{
+		text-decoration: none;
+		color: black;
+	}
+	#white{
+		background-color: white;
+		height: 500px;
+		/*border: solid 1px black;*/
+	}
+	#formdiv{
+		margin: 10px 400px 100px 400px;
+		padding-bottom: 20px;
+		border: 1px solid black;
+		border-radius: 8px;
+		box-shadow: 5px 8px 25px;
+	}
+	textarea{
+		vertical-align: top;
+	}
+</style>
+<body>
+	<!-- <form action = "/cgi-bin/sample.py" method = "post">
+		<input type = "text" name = "Name"><br>
+		<input type="submit" value="Submit"><br>
+	</form> -->
+	<a href="http://gct.ac.in"><img src="gct.png"></a>
+	<div id="navbar">
+		<p><a href="#">Grievances</a></p>
+	</div>
+	<div id="white">
+		<div id="whitetxt">
+			You can fill out this form to report your grievances.
+		</div>
+		<br>
+		<div id="formdiv" align="center">
+			
+			<form action = "/cgi-bin/sample.py" method = "post">
+				<table>
+					<th><td><strong>FORM<br></strong></td></th>
+					<tr><td><br></td></tr>
+					<tr>
+					<td><label>
+						Designation: &nbsp;&nbsp;
+					</label></td>
+					<td><select name="designation">
+						<option value = "Teacher">Teacher</option>
+						<option value="Student">Student</option>
+						<option value="Parent">Parent</option>
+					</select></td><br></tr>
+					<tr><td><br></td></tr>
+					<tr>
+					<td><label>
+						Department: &nbsp;&nbsp;
+					</label></td>
+					<td><input type="text" name="dept"></td><br></tr>
+					<tr><td><br></td></tr>
+					<tr>
+					<td><label>
+						Message: &nbsp;&nbsp;
+					</label></td>
+					<td><textarea name="msg" rows=5 ></textarea></td><br></tr>
+					<tr><td><br></td></tr>
+					<tr><td></td><td><input type="submit" value="Submit"></td></tr>
+				</table>
+			</form>
+		</div>
+		
+	</div>
+</body>
+</html>
