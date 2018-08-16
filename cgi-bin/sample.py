@@ -17,7 +17,7 @@ dept = f.getvalue('dept')
 msg1 = f.getvalue('msg')
 		#print(name)
 gmail_user = 'ahamedmusthafars@gmail.com'
-gmail_pwd = 'livemocha'
+gmail_pwd = '***********'	#Provide your required password
 FROM = 'ahamedmusthafars@gmail.com'
 TO = ['amrstech@gmail.com']
 SUBJECT = 'GCT Website Grievances form mail - reg'
